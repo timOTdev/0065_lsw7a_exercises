@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import animals from './animalsData'
 import './App.css';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      animasl: []
+      animasl: animals
     }
   }
-  
+
   render() {
     return (
       <div className="App">

@@ -18,10 +18,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Animals</h1>
         </header>
+        
         <div>
-
           {this.state.animals.map( animal => (
-            <div key={animal.species}>
+            <div key={animal.id}>
               <p>
                 Name: {animal.name} Species: {animal.species}
               </p>

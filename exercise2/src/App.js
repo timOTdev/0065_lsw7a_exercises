@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import animals from './animalsData'
+import avengers from './avengers'
 import './App.css';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      animals: animals
+      avengers: avengers
     }
   }
 
@@ -16,14 +16,14 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Animals</h1>
+          <h1 className="App-title">Avengers: by Timothy H.</h1>
         </header>
-        
+  
         <div>
-          {this.state.animals.map( animal => (
-            <div key={animal.id}>
+          {this.state.avengers.map( avenger => (
+            <div key={avenger.id}>
               <p>
-                Name: {animal.name} Species: {animal.species}
+                Hero Name: {avenger.heroName} ({avenger.realName})
               </p>
             </div>
           ))}
